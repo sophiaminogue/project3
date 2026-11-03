@@ -1,0 +1,93 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+@font-face {
+    font-family: "Boule Reg";
+    src: url("Compagnon-Roman.woff") format('woff');
+}
+@font-face {
+    font-family: "Boule Bold";
+    src: url("Compagnon-Medium.woff") format('woff');
+}
+@font-face {
+    font-family: "BouleVF";
+    src: url("BouledVF.ttf")
+}
+
+body {
+    line-height: 1.4;
+    padding: 3rem;
+    background-color: rgb(243, 235, 226);
+}
+.web{
+    display: grid;
+    grid-template-columns: 1fr 60%;
+    
+}
+.nav{
+    position: fixed;
+    bottom: 3rem;
+    
+}
+.nav a {
+    font-family:"BouleVF";
+    font-size: 1rem;
+    padding-top: 8px;
+    padding-bottom:8px;
+    border-bottom: solid 1.5px ;
+    display: block;
+    color: inherit;
+    text-decoration: none;
+}
+
+.title{
+    font-family:"BouleVF";
+    font-size: 4.5rem;
+    line-height: 1.1;
+    -webkit-text-stroke:.1rem rgb(255, 100, 152);
+    -webkit-text-fill-color: transparent;
+    writing-mode: vertical-rl;
+    position: sticky;
+    animation: title 5s ease-in-out infinite alternate;
+}
+
+.essay {
+ font-family:"BouleVF";
+    font-size: 1rem;
+    padding-left:3rem ;
+}
+.credit{
+     font-family:"Boule Bold";
+     color: rgb(255, 100, 152);
+     border: 1.5px solid black;
+     border-radius: 25px;
+     padding: 1.5rem;
+}
+.credit a {
+    color: inherit;
+}
+:hover a {
+    animation: link 3 ease 3s alternate forwards;
+}
+
+:active a {
+    color rgb(255, 100, 152);
+    font-family: "Boule Bold";
+}
+@keyframes link {
+    0% {
+        font-variation-settings: "BOUL" 0;
+    }
+    100% {font-variation-settings: "BOUL" 300;}
+}
+@keyframes title {
+    0% {
+        font-variation-settings: "BOUL" 0;;
+        font-size: 4.5rem;
+        letter-spacing: normal;
+    }
+    100% {font-variation-settings: "BOUL" 300; font-size: 6.5rem;letter-spacing: 10%;}
+    
+}
