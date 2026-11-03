@@ -2,6 +2,8 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding-top: 50px;
 }
 @font-face {
     font-family: "Boule Reg";
@@ -41,7 +43,7 @@ body {
     color: inherit;
     text-decoration: none;
 }
-:hover a{
+.nav a:hover{
     color:rgb(255, 100, 152);
     border-color: black;
 }
@@ -53,8 +55,11 @@ body {
     -webkit-text-fill-color: transparent;
     writing-mode: vertical-rl;
     position: sticky;
+    top: 3rem;
     animation: title 5s ease-in-out infinite alternate;
     animation-delay: 2s;
+    pointer-events: none;
+    height: 100vh;
 }
 
 .essay {
@@ -138,7 +143,7 @@ body {
     50%{
 -webkit-text-fill-color: rgb(255, 100, 152);
     }
-    100% {font-variation-settings: "BOUL" 300; font-size: 8rem;letter-spacing: 10%;}
+    100% {font-variation-settings: "BOUL" 300; font-size: 10rem;letter-spacing: 10%;}
     
 }
 .h2{
