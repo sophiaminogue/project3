@@ -41,7 +41,10 @@ body {
     color: inherit;
     text-decoration: none;
 }
-
+:hover a{
+    color:rgb(255, 100, 152);
+    border-color: black;
+}
 .title{
     font-family:"BouleVF";
     font-size: 4.5rem;
